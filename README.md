@@ -10,9 +10,13 @@ pacman -S cmake arm-none-eabi-gcc arm-none-eabi-newlib arm-none-eabi-gdb doxygen
 Clone this repository and then run:
 
 ```
-git submodule update --init --recursive
+git submodule update --init
+(cd pico-sdk && git submodule update --init)
 cd build && cmake .. && make
 ```
+
+(Don’t be tempted to run a single `git submodule update --init --recursive`
+from the root; you’ll pull in 2Gb+ of tinyurl submodules that you don’t need.)
 
 This should generate `hello_world.uf2`
 
