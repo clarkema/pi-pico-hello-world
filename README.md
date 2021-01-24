@@ -16,7 +16,7 @@ cd build && cmake .. && make
 ```
 
 (Don’t be tempted to run a single `git submodule update --init --recursive`
-from the root; you’ll pull in 2Gb+ of tinyurl submodules that you don’t need.)
+from the root; you’ll pull in 2Gb+ of tinyusb submodules that you don’t need.)
 
 This should generate `hello_world.uf2`
 
